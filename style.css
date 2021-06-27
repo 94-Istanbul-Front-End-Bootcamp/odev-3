@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+form > h1 {
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+}
+.form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.form-body > div {
+    margin-top: 10px;
+}
+.form-body div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form-body div label {
+    padding-left: 10px;
+    color: gray;
+    font-weight: bold;
+}
+form > div > div:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+
+form > div > div:nth-child(5) button {
+    width: 30%;
+    background-color: green;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 5px 5px 10px #000;
+}
+form > div > div:nth-child(6) button:hover {
+    background-color: rgb(4, 146, 4);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    font-size: 20px;
+}
+::placeholder {
+    font-size: 20px;
+    color: gray;
+}
+
+.error {
+    font-size: 12px;
+    color: orangered;
+    display: block;
+    padding-top: 5px;
+}
